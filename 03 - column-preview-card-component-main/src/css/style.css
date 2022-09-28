@@ -1,0 +1,39 @@
+.product{
+    display: grid;
+    grid: "sedans suvs luxury";
+    width: 600px;
+    padding-top: 60px;
+    margin: auto;
+}
+.product .sedans{
+    grid-area: sedans;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+.product .suvs{
+    grid-area: suvs;
+    background-color: hsl(184, 100%, 22%);
+}
+.product .luxury{
+    grid-area: luxury;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+.name{
+    color: hsl(0, 0%, 95%);
+}
+.learn-more{
+    background-color: hsl(0, 0%, 95%);
+}
+.sedans .learn-more{
+    color: hsl(31, 77%, 52%);
+}
+.suvs .learn-more{
+    color: hsl(184, 100%, 22%);
+}
+.luxury .learn-more{
+    color: hsl(179, 100%, 13%);
+}
+.description{
+    color: hsla(0, 0%, 100%, 0.75);
+}
