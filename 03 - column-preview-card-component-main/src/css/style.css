@@ -1,10 +1,50 @@
 .product{
     display: grid;
     grid: "sedans suvs luxury";
-    width: 600px;
+    max-width: 850px;
     padding-top: 60px;
     margin: auto;
 }
+
+.product .sedans,
+.product .suvs,
+.product .luxury{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    padding-bottom: 25px;
+    width: 60px;
+}
+
+.name{
+    padding-bottom: 25px;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+}
+
+.description{
+    padding-bottom: 55px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.learn-more{
+    background-color: hsl(0, 0%, 95%);
+    text-align: center;
+    margin-top: auto;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    padding-top: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
 .product .sedans{
     grid-area: sedans;
     background-color: hsl(31, 77%, 52%);
@@ -19,12 +59,7 @@
     background-color: hsl(179, 100%, 13%);
     border-radius: 0 5px 5px 0;
 }
-.name{
-    color: hsl(0, 0%, 95%);
-}
-.learn-more{
-    background-color: hsl(0, 0%, 95%);
-}
+
 .sedans .learn-more{
     color: hsl(31, 77%, 52%);
 }
@@ -33,7 +68,4 @@
 }
 .luxury .learn-more{
     color: hsl(179, 100%, 13%);
-}
-.description{
-    color: hsla(0, 0%, 100%, 0.75);
 }
