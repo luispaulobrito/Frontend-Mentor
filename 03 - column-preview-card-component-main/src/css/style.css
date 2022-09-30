@@ -30,7 +30,8 @@
     padding-bottom: 55px;
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 25px;
 }
 
 .learn-more{
@@ -68,4 +69,31 @@
 }
 .luxury .learn-more{
     color: hsl(179, 100%, 13%);
+}
+
+.learn-more:hover{
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    padding-top: 8px;
+}
+
+.sedans .learn-more:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+.suvs .learn-more:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+.luxury .learn-more:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width:425px) {
+    .product{
+        padding-top: 0;
+        padding-bottom: 0;
+        display: grid;
+        grid: "sedans" "suvs" "luxury";
+    }
 }
