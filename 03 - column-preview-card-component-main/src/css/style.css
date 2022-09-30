@@ -1,7 +1,8 @@
 .product{
     display: grid;
     grid: "sedans suvs luxury";
-    max-width: 850px;
+    max-width: 150vh;
+    min-height: 85vh;
     padding-top: 60px;
     margin: auto;
 }

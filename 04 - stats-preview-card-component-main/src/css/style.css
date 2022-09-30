@@ -1,0 +1,40 @@
+body{
+    display: grid;
+    grid: "main picture";
+    max-width: 150vh;
+    margin: auto;
+    padding-top: 10vh;
+    background-color: hsl(233, 47%, 7%);
+}
+
+picture{
+    grid-area: picture;
+}
+
+main{
+    grid-area: main;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10vh;
+}
+
+h1, .stats{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.statheadings{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+.mainparagraph{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+}
