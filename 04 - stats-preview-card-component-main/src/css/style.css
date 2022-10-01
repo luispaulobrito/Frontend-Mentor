@@ -1,28 +1,48 @@
 body{
     display: grid;
     grid: "main picture";
-    max-width: 150vh;
+    grid-template-columns: 1fr 1fr;
     margin: auto;
     padding-top: 10vh;
     background-color: hsl(233, 47%, 7%);
+    max-width: 150vh;
 }
 
+.color{
+    background: hsl(277, 100%, 50%);
+    width: 470px;
+    height: 391px;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 99;
+}
 picture{
     grid-area: picture;
+    max-width: 150vh;
 }
 
 main{
     grid-area: main;
     background-color: hsl(244, 38%, 16%);
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 10vh;
 }
 
-h1, .stats{
+
+h1{
     color: hsl(0, 0%, 100%);
     font-family: 'Inter', sans-serif;
+    padding-bottom: 5vh;
+} 
+
+.stats{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+.stats ul, .statheadings ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .statheadings{
@@ -37,4 +57,5 @@ span{
 .mainparagraph{
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Inter', sans-serif;
+    padding-bottom: 5vh;
 }
