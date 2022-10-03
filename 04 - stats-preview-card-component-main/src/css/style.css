@@ -1,3 +1,21 @@
+/*Variables*/
+:root{
+    /*Colors*/
+    --veryDarkBlue: hsl(233, 47%, 7%); /*Main*/
+    --darkDesaturatedBlue: hsl(244, 38%, 16%); /*Card*/
+    --softViolet: hsl(277, 64%, 61%); /*Accent*/
+
+    --white: hsl(0, 0%, 100%); /* Heading, stats*/
+    --transparentWhite: hsla(0, 0%, 100%, 0.75); /* Paragraph*/
+    -slightly: hsla(0, 0%, 100%, 0.6); /* Stat headings*/
+
+    /*Fonts-Family*/
+    --f-Inter: 'Inter', sans-serif;
+    --f-LexendDeca: 'Lexend Deca', sans-serif;
+}
+
+/* Utilities */
+
 body{
     display: grid;
     grid: "main picture";
