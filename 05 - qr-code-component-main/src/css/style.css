@@ -47,3 +47,14 @@ main{
     color: var(--grayishBlue);
     font-size: 15px;
 }
+
+.footer{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+    color: var(--grayishBlue);
+    font-family: var(--f-outifit);
+}
+.footer a{
+    color: var(--darkBlue);
+}
