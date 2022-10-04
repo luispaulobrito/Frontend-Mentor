@@ -24,7 +24,26 @@ main{
     max-width: 300px;
     margin: auto;
     margin-top: 50px;
-    padding: 20px;
+    padding: 15px;
     background-color: var(--white);
     border-radius: 20px;
+}
+
+.qrcode{
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.improve, .scan{
+    text-align: center;
+    padding: 10px 10px;
+    font-family: var(--f-outifit);
+}
+.improve{
+    color: var(--darkBlue);
+    font-size: 20px;
+}
+.scan{
+    color: var(--grayishBlue);
+    font-size: 15px;
 }
