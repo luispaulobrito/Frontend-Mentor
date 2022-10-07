@@ -26,27 +26,31 @@ body{
     display: grid;
     grid: "content stars"
           "reviews reviews";
+    grid-template-columns: 2fr 1fr;
     padding: 0 13rem;
     position: relative;
 }
 
 .content{
     grid-area: content; 
-    
+    grid-column-gap: 2rem;
 }
 .content .users{
     color: var(--very-dark-magenta);
     font-size: 5rem;
     padding-bottom: 2rem;
+    padding-top: 6rem;
 }
 .content .description{
     color: var(--dark-grayish-magenta);
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding-bottom: 4rem;
+    line-height: 2.9rem;
 }
 
 .stars{
     grid-area: stars;
+    padding-top: 7rem;
 }
 .stars p{
     color: var(--very-dark-magenta);
@@ -67,12 +71,11 @@ body{
     margin-left: 80px;
 }
 
-.review2{
-    margin-top: 2rem;
-}
+
 .reviews{
     grid-area: reviews;
     display: flex;
+    align-content: space-evenly;
 }
 .reviews .review{
     background-color: var(--very-dark-magenta);
@@ -94,4 +97,14 @@ body{
 }
 .review p{
     padding-top: 2rem;
+    color: var(--light-grayish-magenta);
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+}
+.name h2{
+    color: var(--light-grayish-magenta)
+}
+.name h3{
+    color: var(--soft-pink);
+    line-height: 2rem;
 }
